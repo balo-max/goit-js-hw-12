@@ -2,22 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>HomeWork-JS-LS11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
-
-    <load src="./partials/footer.html" />
-
+    <section class="section-gallery">
+      <div class="wrapper">
+        <form class="search-img-form js-search-img-form">
+          <input
+            class="search-img-input js-search-img-input"
+            type="text"
+            name="user_query"
+            placeholder="Search images..."
+          />
+          <button class="search-img-btn js-search-img-btn" type="submit">
+            Search
+          </button>
+          <div class="loader"></div>
+          <ul class="gallery-list js-gallery-list"></ul>
+        </form>
+      </div>
+    </section>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
